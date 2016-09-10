@@ -11,7 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.czp.arcprogress.MainActivity">
 
-
     <com.czp.library.ArcProgress
         android:id="@+id/myProgress"
         android:layout_width="wrap_content"
@@ -53,4 +52,5 @@
         app:progressStyle="tick"
         app:progressColor="@color/progressColorGreen"
         app:tickDensity="3" />
+
 </RelativeLayout>

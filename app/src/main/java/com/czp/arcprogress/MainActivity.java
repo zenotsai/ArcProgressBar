@@ -24,16 +24,13 @@ public class MainActivity extends AppCompatActivity {
         mProgress02 = (ArcProgress) findViewById(R.id.myProgress02);
         mProgress03 = (ArcProgress) findViewById(R.id.myProgress03);
 
-
-
         mProgress.setOnCenterDraw(new OnTextCenter());
         mProgress1.setOnCenterDraw(new OnTextCenter());
         mProgress02.setOnCenterDraw(new ArcProgress.OnCenterDraw() {
             @Override
-            public void draw(Canvas canvas, RectF rectF, float x, float y, float storkeWidth,int progress) {
+            public void draw(Canvas canvas, RectF rectF, float x, float y, float storkeWidth, int progress) {
                 Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
                 textPaint.setStrokeWidth(35);
-                textPaint.setTextSize(56);
                 textPaint.setColor(getResources().getColor(R.color.textColor));
                 String progressStr = String.valueOf(progress+"%");
                 float textX = x-(textPaint.measureText(progressStr)/2);

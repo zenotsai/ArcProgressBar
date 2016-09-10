@@ -152,12 +152,24 @@ public class ArcProgress extends ProgressBar {
                 dpVal, getResources().getDisplayMetrics());
     }
     public interface  OnCenterDraw {
+        /**
+         *
+         * @param canvas
+         * @param rectF  圆弧的Rect
+         * @param x      圆弧的中心x
+         * @param y      圆弧的中心y
+         * @param storkeWidth   圆弧的边框宽度
+         * @param progress      当前进度
+         */
         public  void draw(Canvas canvas, RectF rectF, float x, float y,float storkeWidth,int progress);
     }
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        mCenterBitmap.recycle();
-        mCenterBitmap = null;
+        if(mCenterBitmap!=null){
+            mCenterBitmap.recycle();
+            mCenterBitmap = null;
+        }
+
     }
 }
