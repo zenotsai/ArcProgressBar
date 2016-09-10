@@ -89,7 +89,7 @@ onImageCenter and OnTextCenter
 
 ```xml
 dependencies {
-  compile 'com.czp.arcProgressBar:ArcProgressBar:1.0.0'
+  compile 'com.czp.arcProgressBar:ArcProgressBar:1.0.1'
 }
 ```
 
