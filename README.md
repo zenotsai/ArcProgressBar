@@ -33,7 +33,9 @@ public interface  OnCenterDraw {
 }
 ```
 默认提供了两个实现
-onImageCenter and OnTextCenter
+**onImageCenter**
+
+**OnTextCenter**
 
 
 ### Use
