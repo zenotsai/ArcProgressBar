@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.czp.library.ArcProgress;
 import com.czp.library.OnTextCenter;
@@ -56,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void addProrgress(ArcProgress progressBar) {
-        new Thread(new ProgressThread(progressBar)).start();
+        Thread thread = new Thread(new ProgressThread(progressBar));
+        thread.start();
     }
 
     class ProgressThread implements Runnable{
@@ -68,8 +70,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             for(;i<=100;i++){
+                if(isFinishing()){
+                    break;
+                }
                 Message msg = new Message();
                 msg.what = i;
+                Log.e("DEMO","i == "+i);
                 msg.obj = progressBar;
                 SystemClock.sleep(100);
                 handler.sendMessage(msg);

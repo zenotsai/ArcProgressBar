@@ -1,9 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 android {
+    lintOptions {
+        abortOnError false
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 22
@@ -26,7 +28,7 @@ publish {
     userOrg = 'zeeeeeeno'
     groupId = 'com.czp.arcProgressBar'
     artifactId = 'ArcProgressBar'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'android arc progressbar'
     website = 'https://github.com/ZeeeeeeNo/ArcProgressBar'
 }
