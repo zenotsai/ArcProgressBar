@@ -33,7 +33,9 @@ public interface  OnCenterDraw {
 }
 ```
 默认提供了两个实现
-onImageCenter and OnTextCenter
+**onImageCenter**
+
+**OnTextCenter**
 
 
 ### Use
@@ -89,7 +91,7 @@ onImageCenter and OnTextCenter
 
 ```xml
 dependencies {
-  compile 'com.czp.arcProgressBar:ArcProgressBar:1.0.0'
+  compile 'com.czp.arcProgressBar:ArcProgressBar:1.0.1'
 }
 ```
 
