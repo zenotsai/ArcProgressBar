@@ -1,9 +1,9 @@
 # ArcProgressBar
 Arc ProgressBar Configurable   圆弧环形进度条
-###DEMO
+### DEMO
 ![](https://github.com/ZeeeeeeNo/ArcProgressBar/blob/master/demo.gif)
 
-###Attributes
+### Attributes
 |name|format|description|
 |:---:|:---:|:---:|
 | borderWidth | integer | 圆弧边框的宽度
@@ -16,7 +16,7 @@ Arc ProgressBar Configurable   圆弧环形进度条
 | bgShow | boolean | 是否显示圆弧边框背景
 | arcCapRound | boolean | 圆弧的笔触是否为圆形，tick无效
 
-###interface
+### interface
 提供了绘制圆弧中间区域的一个接口
 ```java
 /**
@@ -87,7 +87,7 @@ public interface  OnCenterDraw {
             }
         });
 ```
-###Including in your project
+### Including in your project
 
 ```xml
 dependencies {
@@ -96,7 +96,7 @@ dependencies {
 ```
 
 
-###License
+### License
 <pre>
 Copyright 2016 Cai ZePeng
 
